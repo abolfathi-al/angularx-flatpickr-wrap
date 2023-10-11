@@ -12,7 +12,7 @@ import { Subject } from 'rxjs';
 import {
   FlatpickrModule,
   FlatpickrDefaultsInterface,
-} from 'angularx-flatpickr';
+} from 'angularx-flatpickr-wrap';
 import { By } from '@angular/platform-browser';
 import { filter, take } from 'rxjs/operators';
 

@@ -12,7 +12,7 @@ module.exports = function (config) {
       require('@angular-devkit/build-angular/plugins/karma')
     ],
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/angularx-flatpickr'),
+      dir: require('path').join(__dirname, '../../coverage/angularx-flatpickr-wrap'),
       subdir: '.',
       reporters: [
         { type: 'html' },

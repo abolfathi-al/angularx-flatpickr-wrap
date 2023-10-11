@@ -119,23 +119,23 @@
         }
       }
     },
-    "angularx-flatpickr": {
+    "angularx-flatpickr-wrap": {
       "projectType": "library",
-      "root": "projects/angularx-flatpickr",
-      "sourceRoot": "projects/angularx-flatpickr/src",
+      "root": "projects/angularx-flatpickr-wrap",
+      "sourceRoot": "projects/angularx-flatpickr-wrap/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/angularx-flatpickr/ng-package.json"
+            "project": "projects/angularx-flatpickr-wrap/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/angularx-flatpickr/tsconfig.lib.prod.json"
+              "tsConfig": "projects/angularx-flatpickr-wrap/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/angularx-flatpickr/tsconfig.lib.json"
+              "tsConfig": "projects/angularx-flatpickr-wrap/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -143,17 +143,17 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/angularx-flatpickr/src/test.ts",
-            "tsConfig": "projects/angularx-flatpickr/tsconfig.spec.json",
-            "karmaConfig": "projects/angularx-flatpickr/karma.conf.js"
+            "main": "projects/angularx-flatpickr-wrap/src/test.ts",
+            "tsConfig": "projects/angularx-flatpickr-wrap/tsconfig.spec.json",
+            "karmaConfig": "projects/angularx-flatpickr-wrap/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/angularx-flatpickr/**/*.ts",
-              "projects/angularx-flatpickr/**/*.html"
+              "projects/angularx-flatpickr-wrap/**/*.ts",
+              "projects/angularx-flatpickr-wrap/**/*.html"
             ]
           }
         }

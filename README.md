@@ -1,43 +1,40 @@
-# angularx flatpickr
+# angularx flatpickr wrap
 
-[![Sponsorship](https://img.shields.io/badge/funding-github-%23EA4AAA)](https://github.com/users/mattlewis92/sponsorship)
-[![Build Status](https://github.com/mattlewis92/angularx-flatpickr/actions/workflows/ci.yml/badge.svg)](https://github.com/mattlewis92/angularx-flatpickr/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/mattlewis92/angularx-flatpickr/branch/main/graph/badge.svg)](https://codecov.io/gh/mattlewis92/angularx-flatpickr)
-[![npm version](https://badge.fury.io/js/angularx-flatpickr.svg)](http://badge.fury.io/js/angularx-flatpickr)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mattlewis92/angularx-flatpickr/main/LICENSE)
-
-## Demo
-
-https://mattlewis92.github.io/angularx-flatpickr/
+> This project is based on [`angularx-flatpickr`](https://github.com/mattlewis92/angularx-flatpickr), which combined with [`native-date-adapter`](https://www.npmjs.com/package/native-date-adapter), now it contains lunar and jalali calenders.
 
 ## Table of contents
 
-- [About](#about)
-- [Installation](#installation)
-- [Documentation](#documentation)
-- [Development](#development)
-- [License](#license)
+- [angularx flatpickr wrap](#angularx-flatpickr-wrap)
+  - [Table of contents](#table-of-contents)
+  - [About](#about)
+  - [Installation](#installation)
+  - [Development](#development)
+    - [Prepare your environment](#prepare-your-environment)
+    - [Development server](#development-server)
+    - [Testing](#testing)
+    - [Release](#release)
+  - [License](#license)
 
 ## About
 
-An angular 14.0+ wrapper for flatpickr
+An angular 14.0+ wrapper for flatpickr-wrap
 
 ## Installation
 
 Install through npm:
 
 ```
-npm install flatpickr angularx-flatpickr
+npm install flatpickr-wrap angularx-flatpickr-wrap
 ```
 
-Next, in your `angular.json` add `"node_modules/flatpickr/dist/flatpickr.css"` to the `styles` array of your application
+Next, in your `angular.json` add `"node_modules/flatpickr-wrap/dist/flatpickr.css"` to the `styles` array of your application
 
 Then include in your apps module:
 
 ```typescript
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { FlatpickrModule } from 'angularx-flatpickr';
+import { FlatpickrModule } from 'angularx-flatpickr-wrap';
 
 @NgModule({
   imports: [FormsModule, FlatpickrModule.forRoot()],
@@ -64,12 +61,7 @@ import { Component } from '@angular/core';
 export class MyComponent {}
 ```
 
-You may also find it useful to view the [demo source](https://github.com/mattlewis92/angularx-flatpickr/blob/main/projects/demo/app/demo.component.ts).
-
-## Documentation
-
-All documentation is auto-generated from the source via [compodoc](https://compodoc.github.io/compodoc/) and can be viewed here:
-https://mattlewis92.github.io/angularx-flatpickr/docs/
+You may also find it useful to view the [demo source](https://github.com/abolfathi-al/angularx-flatpickr-wrap/blob/main/projects/demo/app/demo.component.ts).
 
 ## Development
 

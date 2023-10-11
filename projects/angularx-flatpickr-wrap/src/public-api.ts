@@ -1,5 +1,5 @@
 /*
- * Public API Surface of angularx-flatpickr
+ * Public API Surface of angularx-flatpickr-wrap
  */
 
 export * from './lib/flatpickr.module';

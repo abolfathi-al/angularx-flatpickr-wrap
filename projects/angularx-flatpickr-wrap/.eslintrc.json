@@ -10,8 +10,8 @@
       ],
       "parserOptions": {
         "project": [
-          "projects/angularx-flatpickr/tsconfig.lib.json",
-          "projects/angularx-flatpickr/tsconfig.spec.json"
+          "projects/angularx-flatpickr-wrap/tsconfig.lib.json",
+          "projects/angularx-flatpickr-wrap/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },

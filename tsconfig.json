@@ -2,9 +2,10 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "skipLibCheck": true,
     "paths": {
-      "angularx-flatpickr": [
-        "projects/angularx-flatpickr/src/public-api.ts"
+      "angularx-flatpickr-wrap": [
+        "projects/angularx-flatpickr-wrap/src/public-api.ts"
       ]
     },
     "baseUrl": "./",

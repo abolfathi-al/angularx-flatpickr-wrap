@@ -1,21 +1,21 @@
 {
-  "name": "angularx-flatpickr3",
-  "version": "7.3.0",
-  "description": "An angular 14.0+ wrapper for flatpickr",
+  "name": "angularx-flatpickr-wrap",
+  "version": "1.0.0",
+  "description": "An angular 14.0+ wrapper for flatpickr-wrap",
   "scripts": {
     "start": "concurrently --raw \"ng serve --open\" \"pnpm test:watch\"",
     "build:demo": "ng build --configuration production",
-    "build:lib": "copyfiles package.json projects/angularx-flatpickr && ng build angularx-flatpickr --configuration production && pnpm copyfiles",
+    "build:lib": "copyfiles package.json projects/angularx-flatpickr-wrap && ng build angularx-flatpickr-wrap --configuration production && pnpm copyfiles",
     "build:clean": "rm -rf dist",
-    "copyfiles": "copyfiles CHANGELOG.md README.md LICENSE dist/angularx-flatpickr",
-    "test": "pnpm lint && ng test angularx-flatpickr --watch=false --code-coverage && pnpm build:lib && pnpm build:clean",
-    "test:watch": "ng test angularx-flatpickr",
+    "copyfiles": "copyfiles CHANGELOG.md README.md LICENSE dist/angularx-flatpickr-wrap",
+    "test": "pnpm lint && ng test angularx-flatpickr-wrap --watch=false --code-coverage && pnpm build:lib && pnpm build:clean",
+    "test:watch": "ng test angularx-flatpickr-wrap",
     "lint": "ng lint",
     "commit": "git-cz",
     "compodoc": "compodoc -p tsconfig-compodoc.json -d dist/demo/docs --disableGraph --disableCoverage --disablePrivate --disableInternal --disableLifeCycleHooks --disableProtected",
     "prerelease": "pnpm test",
     "release:git": "standard-version && git push --follow-tags origin main",
-    "release:npm": "pnpm build:lib && pnpm publish dist/angularx-flatpickr",
+    "release:npm": "pnpm build:lib && pnpm publish dist/angularx-flatpickr-wrap",
     "release": "pnpm release:git && pnpm release:npm",
     "postrelease": "pnpm gh-pages",
     "gh-pages": "pnpm build:clean && pnpm build:demo && pnpm compodoc && ng deploy && pnpm build:clean",
@@ -23,19 +23,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattlewis92/angularx-flatpickr.git"
+    "url": "git+https://github.com/abolfathi-al/angularx-flatpickr-wrap.git"
   },
   "keywords": [
     "angular",
     "flatpickr",
-    "datepicker"
+    "datepicker",
+    "Iranian",
+    "Farsi",
+    "Jalali",
+    "Persian",
+    "Khayyami",
+    "Khorshidi",
+    "Shamsi"
   ],
-  "author": "Matt Lewis",
+  "author": "alireza abolfathi <abolfathi.al@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mattlewis92/angularx-flatpickr/issues"
+    "url": "https://github.com/abolfathi-al/angularx-flatpickr-wrap/issues"
   },
-  "homepage": "https://github.com/mattlewis92/angularx-flatpickr#readme",
+  "homepage": "https://github.com/abolfathi-al/angularx-flatpickr-wrap#readme",
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.1.2",
     "@angular-eslint/builder": "14.0.2",
@@ -69,7 +76,7 @@
     "concurrently": "^7.3.0",
     "copyfiles": "^2.4.1",
     "eslint": "^8.18.0",
-    "flatpickr": "^4.6.13",
+    "flatpickr-wrap": "^1.0.0",
     "husky": "^8.0.1",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -94,7 +101,7 @@
   "peerDependencies": {
     "@angular/core": ">=5.0.0",
     "@angular/forms": ">=5.0.0",
-    "flatpickr": "^4.5.0"
+    "flatpickr-wrap": "^1.0.0"
   },
   "commitlint": {
     "extends": [

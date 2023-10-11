@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "include": [
-    "projects/angularx-flatpickr/src/lib/**/*.ts"
+    "projects/angularx-flatpickr-wrap/src/lib/**/*.ts"
   ],
   "exclude": [
     "node_modules",

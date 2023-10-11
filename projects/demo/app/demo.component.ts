@@ -14,6 +14,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
               <input
                 class="form-control"
                 type="text"
+                [altInput]="true"
+                locale="fa"
+                dateFormat="Y-m-d"
                 mwlFlatpickr
                 [(ngModel)]="basicDemoValue">
               NgModel value: {{ basicDemoValue }}
@@ -32,6 +35,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
                 mwlFlatpickr
                 [(ngModel)]="modelValueAsDate"
                 [altInput]="true"
+                locale="fa"
+                dateFormat="Y-m-d"
                 [convertModelValue]="true">
               NgModel value: {{ modelValueAsDate }}
             </div>
@@ -49,6 +54,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
                 mwlFlatpickr
                 [(ngModel)]="dateTimeValue"
                 [altInput]="true"
+                locale="fa"
+                dateFormat="Y-m-d"
                 [convertModelValue]="true"
                 [enableTime]="true"
                 dateFormat="Y-m-dTH:i">
@@ -70,6 +77,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
                 mwlFlatpickr
                 [(ngModel)]="multiDates"
                 [altInput]="true"
+                locale="fa"
+                dateFormat="Y-m-d"
                 [convertModelValue]="true"
                 mode="multiple">
               NgModel value: {{ multiDates }}
@@ -88,6 +97,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
                 mwlFlatpickr
                 [(ngModel)]="rangeValue"
                 [altInput]="true"
+                locale="fa"
+                dateFormat="Y-m-d"
                 [convertModelValue]="true"
                 mode="range">
               NgModel value: {{ rangeValue | json }}
@@ -127,6 +138,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
                 mwlFlatpickr
                 [(ngModel)]="inlineDatePicker"
                 [altInput]="true"
+                locale="fa"
+                dateFormat="Y-m-d"
                 [convertModelValue]="true"
                 [inline]="true">
               NgModel value: {{ inlineDatePicker }}

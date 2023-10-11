@@ -18,7 +18,7 @@ import {
   FlatpickrDefaultsInterface,
 } from './flatpickr-defaults.service';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import flatpickr from 'flatpickr';
+import flatpickr from 'flatpickr-wrap';
 
 export interface FlatPickrOutputOptions {
   selectedDates: Date[];
@@ -43,8 +43,7 @@ export const FLATPICKR_CONTROL_VALUE_ACCESSOR: any = {
   exportAs: 'mwlFlatpickr',
 })
 export class FlatpickrDirective
-  implements AfterViewInit, OnChanges, OnDestroy, ControlValueAccessor
-{
+  implements AfterViewInit, OnChanges, OnDestroy, ControlValueAccessor {
   /**
    * Object-options that can be user for multiple instances of Flatpickr.
    * Option from this object is applied only if specific option is not specified.
@@ -346,16 +345,16 @@ export class FlatpickrDirective
   private isDisabled = false;
   private initialValue: any;
 
-  onChangeFn: (value: any) => void = () => {};
+  onChangeFn: (value: any) => void = () => { };
 
   @HostListener('blur')
-  onTouchedFn = () => {};
+  onTouchedFn = () => { };
 
   constructor(
     private elm: ElementRef,
     private defaults: FlatpickrDefaults,
     private renderer: Renderer2
-  ) {}
+  ) { }
 
   ngAfterViewInit(): void {
     const options: any = {
